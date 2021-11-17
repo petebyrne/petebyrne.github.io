@@ -1,0 +1,233 @@
+html {
+    font-size: 16px;
+    color: white;
+}
+
+body, html {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    background-image: url(../images/swiz.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: fixed;
+}
+
+main {
+    position: relative;
+    width: 70rem;
+    max-width: 95%;
+    margin: 0 auto;
+}
+
+header {
+    max-width: 95%;
+    width: 70rem;
+    text-align: right;
+    margin: 10px auto;
+    font-size: 1.5rem;
+}
+
+h3 {
+    text-decoration: underline;
+}
+
+nav li {
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+}
+
+nav li:hover {
+    color: black;
+    background-color: white;
+}
+
+nav ul {
+    display: inline-flex;
+    list-style-type: none;
+    color: white;
+    justify-items: space-evenly;
+}
+
+#profile-pic img{
+    height: 700px;
+    position: relative;
+    left: -420px;
+    top: -5px;
+}
+
+#profile-pic {
+    overflow: hidden;
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    border: 1px solid white;
+    padding: 20px;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+@media only screen and (max-width: 900px) {
+    main #about, #projects, #skills, #contact {
+        margin: 10px auto;
+    }
+
+    nav ul {
+        padding-inline-start: 0;
+        flex-wrap: wrap;
+    }
+
+    header {
+        text-align: center;
+        max-width: 100%;
+    }
+
+    div#about blockquote {
+        width: 80%;
+        margin: 5rem auto;
+        text-align: center;
+    }
+
+    div#projects {
+        text-align: center;
+        width: 80%;
+        margin: 10px auto;
+    }
+
+    div#projects ul {
+        text-align: center;
+        list-style-type: none;
+        max-width: 85%;
+    }
+
+    #contact {
+        text-align: center;
+    }
+
+    #contact form {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    div#skills {
+        text-align: center;
+    }
+
+
+    body {
+        background-image: none;
+        background-color: black;
+    }
+    
+    h1 {
+        text-align: center;
+        margin: 20px auto;
+    }
+
+    #profile-pic {
+        position: relative;
+        margin: 10px auto;
+    }
+
+    #skills ul li {
+        line-height: 3.5rem;
+        text-align: left;
+        padding-left: 100px;
+    }
+}
+
+h1 {
+    font-size: 3rem;
+    position: relative;
+}
+
+h2 {
+    font-size: 2.5rem;
+    margin-left: auto;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+p {
+    font-size: 1.8rem;
+}
+
+blockquote {
+    width: 50%;
+    font-size: 1.8rem;
+    line-height: 4rem;
+    margin-top: 60px;
+}
+
+#projects ul {
+    max-width: 55%;
+}
+
+#projects a {
+    text-decoration: none;
+    color: white;
+}
+
+#skills li {
+    list-style-type: none;
+    font-size: 2rem;
+    line-height: 7rem;
+    max-height: 100%;
+    display: inline-block;
+    width: 13rem;
+}
+
+#skills ul {
+    max-width: 70%;
+}
+
+form { max-width:420px; margin: 50px 30px; }
+
+.feedback-input {
+  color:white;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight:500;
+  font-size: 18px;
+  border-radius: 5px;
+  line-height: 22px;
+  background-color: transparent;
+  border:2px solid white;
+  transition: all 0.3s;
+  padding: 13px;
+  margin-bottom: 15px;
+  width:100%;
+  box-sizing: border-box;
+  outline:0;
+}
+
+.feedback-input:focus { border:2px solid white; }
+
+textarea {
+  height: 150px;
+  line-height: 150%;
+  resize:vertical;
+}
+
+[type="submit"] {
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  width: 100%;
+  background:black;
+  border-radius:5px;
+  border:0;
+  cursor:pointer;
+  color:white;
+  font-size:24px;
+  padding-top:10px;
+  padding-bottom:10px;
+  transition: all 0.3s;
+  margin-top:-4px;
+  font-weight:700;
+}
+[type="submit"]:hover { background:white; color: black; }

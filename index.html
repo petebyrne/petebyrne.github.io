@@ -1,1 +1,83 @@
-Hello World!
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css">
+    <link rel="stylesheet" href="./resources/css/style.css">
+    <title>Meet Pete</title>
+</head>
+<body>
+    
+    <header>
+        <nav>
+        <ul>
+            <li id='button 1'>About</li>
+            <li id='button 2'>Projects</li>
+            <li id='button 3'>Skills</li>
+            <li id='button 4'>Contact</li>
+        </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Pete Byrne</h1>
+        <div id='profile-pic'>
+            <img src="./resources/images/730793_12262091.jpg" alt="profile picture">
+        </div>
+    <!-- About section -->
+    <div id="about">
+        <blockquote>"Hi. I'm a full-stack developer based in London. Please feel free to explore my web-site, and take a look at the different projects I've constructed."</blockquote>
+    </div>
+    
+    <!-- Projects section -->
+    <div id="projects">
+        <h2>Projects</h2>
+        <ul>
+            <a href="https://petebyrne.github.io/Pete-s-Real-Estate/#team" target='blank'>
+                <li>
+                    <h3>Pete's Real Estate</h3>
+                    <p>The front page of a web-site used to promote a fictitious real estate company, utilizing flex-box to make the website responsive to different screen sizes.
+                    </p>
+                </li>
+            </a>
+            <a href="https://petebyrne.github.io/swimmingClub/" target="blank">
+                <li>
+                    <h3>Masters Swimming Club</h3>
+                    <p>A web-site for a swimming club.</p>
+                </li>
+            </a>
+        </ul>
+    </div>
+
+
+    <!-- Skills section -->
+    <div id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li><i class="devicon-html5-plain"></i>  HTML</li>
+            <li><i class="devicon-css3-plain"></i>  CSS</li>
+            <li><i class="devicon-javascript-plain"></i>    JavaScript</li>
+            <li><i class="devicon-python-plain"></i>    Python</li>
+            <li><i class="devicon-git-plain">   Git</i>
+            </li>
+            <li><i class="devicon-github-original"></i>     Github</li>
+            <li><i class="devicon-vscode-plain"></i>    VSCode</li>
+        </ul>
+    </div>
+
+    <!-- contact section -->
+    <div id='contact'>
+        <h2>Contact</h2>
+        <form>      
+            <input name="name" type="text" class="feedback-input" placeholder="Name" required/>   
+            <input name="email" type="text" class="feedback-input" placeholder="Email" required/>
+            <textarea name="text" class="feedback-input" placeholder="Message" required></textarea>
+            <input type="submit" value="SUBMIT"required/>
+          </form>
+    </div>
+
+    </main>
+    <script src="./main.js"></script>
+</body>
+</html>
