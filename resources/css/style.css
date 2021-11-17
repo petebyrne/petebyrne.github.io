@@ -122,6 +122,7 @@ nav ul {
     body {
         background-image: none;
         background-color: black;
+        position: static;
     }
     
     h1 {
