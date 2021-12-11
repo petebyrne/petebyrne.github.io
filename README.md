@@ -1,4 +1,4 @@
-# Meet Peet
+# Meet Pete
 
 ## Portfolio Project
 
